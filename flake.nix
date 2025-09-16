@@ -91,6 +91,6 @@
         default = inputs.self.templates.tidal-project;
       };
 
-      formatter = perSystemPkgs (pkgs: pkgs.nixfmt-rfc-style);
+      formatter = perSystemPkgs (pkgs: pkgs.nixfmt-tree);
     };
 }
