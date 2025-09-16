@@ -32,7 +32,7 @@ final: prev: {
   # A sclang command with superdirt included via conf yaml.
   sclang-with-superdirt = final.callPackage ./pkgs/sclang-with-superdirt.nix { };
   # A very simple default superdirt start file.
-  superdirt-start-sc = prev.writeText "superdirt-start.sc" "SuperDirt.start;";
+  superdirt-start-sc = "${superdirt-src}/superdirt_startup.scd";
   # Run `SuperDirt.start` in supercollider, ready for tidal.
   superdirt-start = final.callPackage ./pkgs/superdirt-start.nix { };
   # Installs SuperDirt under your user's supercollider quarks.
